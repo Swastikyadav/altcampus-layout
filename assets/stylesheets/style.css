@@ -1,0 +1,187 @@
+/* Universal styles */
+
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 18px;
+}
+body {
+    font-family: 'Mali', cursive;
+    line-height: 1.5;
+    background: #B7F5CD;
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 3rem;
+}
+p {
+    text-align: center;
+    padding: 2rem;
+}
+a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+}
+.flex {
+    display: flex;
+}
+.grid {
+    display: grid;
+}
+
+/* Header */
+
+header {
+    position: absolute;
+    width: 100%;
+}
+.nav-bar {
+    font-size: 1.2rem;
+    font-weight: normal;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+/* Hero Section */
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/img1.jpg");
+    background-size: cover;
+    background-position: top;
+    height: 500px;
+}
+.hero-text {
+    text-align: center;
+    padding-top: 15rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Media Section */
+
+.media {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    padding-top: 5rem;
+    background: #DADADA;
+    margin-top: 1rem;
+}
+.image,
+.audio,
+.video {
+    text-align: center;
+}
+.audio {
+    padding-top: 5rem;
+}
+.audio p {
+    padding-top: 5.5rem;
+}
+
+/* Classic Section */
+
+.classic {
+    background: #5EC027;
+    padding-bottom: 2rem;
+}
+.classic p {
+    padding: 0 3rem;
+}
+.classic-video {
+    width: 70%;
+    background: #fff;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+/* Map */
+.map {
+    text-align: center;
+    padding: 2rem;
+    background: #2D2D2D;
+}
+
+/* Contact Section */
+.form {
+    padding: 3rem;
+}
+form {
+    background: #fff;
+    width: 90%;
+    padding: 2rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.input {
+    width: 40%;
+    padding: 1rem;
+}
+.subject,
+textarea {
+    width: 80%;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+textarea {
+    resize: none;
+}
+.btn {
+    background: #436658;
+    color: #fff;
+    font-weight: bold;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px; 
+}
+
+/* Footer */
+
+footer {
+    background: #2D2D2D;
+}
+.foot-bar a {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 900px) {
+    html {
+        font-size: 16px;
+    }
+    .media {
+        grid-template-columns: 1fr;
+    }
+}
